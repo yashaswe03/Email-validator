@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  backdrop-filter: blur(10px); /* modern blur effect */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.input-group {
+  position: relative;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#email-field {
+  width: 100%;
+  padding: 12px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #333;
+  font-size: 18px;
+  transition: border-color 0.3s;
+}
+
+#email-field::placeholder {
+  color: #aaa;
+}
+
+#email-field.error {
+  border-color: #ef4444;
+}
+
+#email-field.valid {
+  border-color: #10b981;
+}
+
+#email-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #374151;
+  transition: 0.3s;
+}
+
+#email-label.active {
+  color: #111827;
+}
+
+#email-error {
+  font-size: 14px;
+  margin-top: 8px;
+  display: block;
+  color: #dc2626;
+  transition: color 0.3s;
+}
